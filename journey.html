@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Our Journey</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="home.html"><img src="images/weatherguys.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html"> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="journey.html"> Our Journey </a>
+        </li>
+	      <li class="nav-item">
+          <a class="nav-link" href="map.htm"> MAP </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"> Contact </a>
+        </li>
+      </ul>
+    </div>
+</div>
+</nav>
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+    <div class="col-12">
+  <h2>The workflow: OurJourney So far...</h2></div>
+  <div class="col-12"><h4><p class="text-info">Main Approach: </p></h4></div>
+  <p class="text-muted">For our group, it was imperative that we tackled all aspects of this project as a team, while also playing to the strength 
+  of each group member. In order to achieve our set goals, we kicked off our project with a team meeting, discussing components that would need to be created, configured, tweaked or added to the project. We also discussed extensively on the the tools needed to create usable solutions that addresses our problem. We created a github repository where each group member could commit changes to the map and the dashboard. </p>
+  
+
+<div class="col-12"><h4><p class="text-danger">Data Acquisition: </p></h4></div>
+  <p class="text-muted">We acquired our data from several open data portals. Our base map belongs to OpenStreetMap. 
+	  The other layers and materials used are listed in the table below</p>
+<table class="table table-striped">
+<thead>
+      <tr>
+        <th>Layer Name</th>
+        <th>Source/Link</th>
+        <th>Description</th>
+       
+      </tr>
+    </thead>
+<tbody>
+      <tr>
+        <td>Open Weather MAP</td>
+        <td>https://home.openweathermap.org/</td>
+        <td>Open weather map provides highly recognisable weather maps and data for the world. <br>
+        We relied on their data for the current weather forecast of our trail locations.</td>
+      </tr>
+</tbody>
+<tbody>
+      <tr>
+        <td>Map Box (Open Street Map) </td>
+        <td>https://mapbox.com </td>
+        <td>The open street map provides a base map for all layers to be displayed effectively.<br>
+        We chose the base map good enough to display all layers we added without colour conflicts</td>
+      </tr>
+</tbody>
+<tbody>
+      <tr>
+        <td>Leaflet JavaScript  </td>
+        <td>https://leafletjs.com/ </td>
+        <td>Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps<br>
+        All map layers, tiles and features were embedded on the base map using Leaflet Javascrip API</td>
+      </tr>
+</tbody>
+<tbody>
+      <tr>
+        <td>Trail head  </td>
+        <td>https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/
+        services/LIO_OPEN_DATA/LIO_Open04/MapServer/20</td>
+        <td>This data containing trail heads in Ontario was gotten from the government of Ontraio website.<br>
+        The dtrail heads data, represented on the map as clustered markers displays detailed information about the trail head once clicked.</td>
+      </tr>
+</tbody>
+<tbody>
+      <tr>
+        <td>Trail Paths  </td>
+        <td>https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/
+        services/LIO_OPEN_DATA/LIO_Open04/MapServer/19</td>
+        <td>This data containing trail paths in Ontario was gotten from the website of the Ontario government.<br>
+        Once clicked, the path information pops up, giving more information about the current path surface material. </td>
+      </tr>
+</tbody>
+
+
+
+</table></div></div>
+<!--- Footer -->
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+  <div class="col-md-6">
+    <img src="images/weatherguys.png">
+    <hr class="light"> 
+  </div>
+  <div class="col-md-6">
+    <img src="images/fleminglogo.png">
+    <hr class="light"> 
+  </div>
+  <div class="col-12">
+    <hr class="light">
+    <h5>&copy; 2021 GEOM 99 Group 5</h5>
+  </div>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
